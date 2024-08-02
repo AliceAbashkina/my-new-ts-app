@@ -1,0 +1,85 @@
+.questionary__title {
+    text-align: center;
+    color: var(--third-text-color);
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.questionary__paragraph {
+    text-align: center;
+    font-size: 20px;
+}
+
+.questionary__icon {
+    text-align: center;
+    font-size: 60px;
+    line-height: 1em;
+    color: var(--fourth-text-color);
+    margin: 80px 0;
+}
+
+.questionary__icon i {
+    animation-duration: 2s;
+    animation-name: up-down;
+    animation-iteration-count: infinite;
+}
+
+.questionary__subtitle {
+    color: var(--fourth-text-color);
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.questionary__field {
+    margin-bottom: 50px;
+}
+
+.questionary__label {
+    font-size: 24px;
+}
+
+.questionary__label span {
+    font-size: 14px;
+    display: block;
+}
+
+.questionary__textarea {
+    resize: none;
+}
+
+.questionary__stepper {
+    margin-top: 100px;
+}
+
+.stepper__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 30px;
+    align-items: center;
+}
+
+.stepper__step {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.questionary__actions {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(-15px);
+    }
+
+    50% {
+        transform: translateY(15px);
+    }
+
+    100% {
+        transform: translateY(-15px);
+    }
+}

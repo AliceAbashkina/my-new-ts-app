@@ -1,0 +1,16 @@
+.width {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.center_elements {
+  justify-content: center;
+  text-align: -webkit-center;
+}
+
+.background_purple {
+  background-color: #F9F7FF;
+  border: none;
+}

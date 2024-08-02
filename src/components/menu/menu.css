@@ -1,0 +1,67 @@
+.menu__body {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 865px) {
+    .menu__body {
+        display: none;
+    }
+}
+
+.menu__body_mobile {
+    display: none;
+}
+
+@media screen and (max-width: 865px) {
+    .menu__body_mobile {
+        display: flex;
+        place-content: space-around;
+        
+        position: fixed;
+        bottom: 0;
+        
+        left: 0;
+        width: 100%;
+        background-color: #ffffff; /* Цвет фона */
+        z-index: 999; /* Значение z-index для управления порядком слоёв */
+    }
+}
+
+.menu__item {
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 865px) {
+    .menu__item {
+       text-align: center;
+    }
+}
+
+.menu__item:last-child {
+    margin-bottom: 0px;
+}
+
+.menu__link {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--main-text-color);
+}
+
+.menu__link:hover {
+    color: var(--fourth-text-color);
+}
+
+.menu__text_icon {
+    font-size: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+@media screen and (max-width: 401px) {
+    .menu__text_icon {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+}

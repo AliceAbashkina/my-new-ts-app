@@ -1,0 +1,119 @@
+.sessions__bottom {
+    flex: 2;
+    background-color: #fff;
+    padding: 10px 20px;
+}
+
+.sessions__tabs {
+    display: flex;
+    margin-bottom: 20px;
+    display: none; /* Начально скрытое содержимое */
+}
+
+.sessions__tabs {
+    display: flex;
+    margin-bottom: 20px;
+    transition: max-height 0.3s ease-out;
+}
+.sessions__tabs.collapsed {
+    max-height: 0;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.sessions__tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-bottom: 2px solid #D9D9D9;
+    outline: none;
+}
+
+.sessions__tab.sessions__active {
+    border-bottom: 2px solid #FFA630;
+    color: #FFA630;
+}
+
+
+.sessions__list {
+    max-width: 350px;
+    min-width: 300px;
+    max-height: 100vh;
+    background-color: #fff;
+    border: 1px solid #DEE1E6;
+    padding: 30px;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.sessions__grey-text {
+    color: #8b8b8b;
+}
+
+.sessions_card {
+    background-color: #F2F2F2;
+    padding: 5px;
+    width: max-content;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+.sessions_list-elements {
+    margin-bottom: 20px;
+    margin-right: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.sessions_list-elements:hover {
+    cursor: pointer;
+    background-color: #F6F6F6;
+}
+
+.sessions__black {
+    width: 100%;
+    height: 100%;
+    background-color: #DEE1E6;
+}
+
+.sessions__container {
+    height: 100%;
+    width: 100%;
+    max-width: 100% !important;
+}
+
+.sessions__screen {
+    width: 100%;
+    position: relative;
+
+}
+
+.session__tabs_content {
+    position: absolute;
+    bottom: 6%;
+    background-color: #fff;
+    width: 100%;
+    left: 0;
+}
+
+.session__tab_content {
+    padding: 5px 20px;
+}
+
+.session__table_statistic {
+    width: 100%;
+    border-collapse: collapse; /* Убирает пробелы между ячейками */
+}
+
+.session__textarea {
+    border:2px solid #dddddd; /* Устанавливает цвет, стиль и ширину границы */
+    border-radius: 4px;
+    width: 100%;
+    resize: none; /* Отключает возможность изменения размеров */
+    padding: 5px;
+    outline: none;
+}
+
+.session__textarea:focus {
+    border-color: #c0bebe; /* Цвет границы при фокусе */
+}

@@ -1,0 +1,54 @@
+.clients__therapy {
+    border: 1px solid #dee1e6;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.clients__therapy-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.clients__therapy-header h2 {
+    margin: 0;
+}
+
+.clients__title {
+    font-size: 16px;
+    color: black;
+    margin: 10px 6px;
+}
+
+.clients__therapy-content {
+    padding: 10px;
+}
+
+.clients__therapy-status {
+    box-shadow: 0 2px 10px 0 rgba(78, 78, 78, 0.12);
+    border-radius: 2px;
+    padding: 4px 12px;
+}
+
+.clients__table_clients {
+    text-align: center;
+    width: 100%;
+}
+
+.clients__status-icon-active {
+    color: #ffa630;
+    font-size: 8px;
+    margin-right: 8px;
+}
+.clients__status-icon-deactive {
+    color: #8b8b8b;
+    font-size: 8px;
+    margin-right: 8px;
+}
+
+.client__grey-text {
+    color: #8b8b8b;
+    margin-top: 10px;
+}

@@ -1,0 +1,85 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 40vw; /* Фиксированная ширина вьюпорта */
+    max-width: 100%; /* Максимальная ширина 100%, чтобы не вылезало за границы вьюпорта */
+    max-height: 80vh; /* Максимальная высота вьюпорта */
+    overflow: auto; /* Включаем скролл при необходимости */
+    word-wrap: break-word; /* Перенос слов */
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0; /* Серый фон заголовка */
+    padding: 10px 20px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.modal-title {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.modal__content {
+    padding: 20px 20px;
+    width: 100%;
+}
+
+.modal-close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #555;
+}
+
+.modal__button{
+    background-color: var(--main-btn-color);
+    color: var(--second-text-color);
+    padding: 5px 15px;
+    border: 2px solid var(--main-btn-color);
+    border-radius: var(--main-border-radius);
+    font-weight: 500;
+    user-select: none;
+    transition: 0.3s all ease;
+}
+
+.modal__button-outlined{
+    background-color: #FFF;
+    color:var(--main-btn-color);
+    padding: 5px 15px;
+    border: 2px solid var(--main-btn-color);
+    border-radius: var(--main-border-radius);
+    font-weight: 500;
+    user-select: none;
+    transition: 0.3s all ease;
+}
+
+.modal__clients-item {
+    margin-bottom: 25px;
+}
+
+.modal__clients-list {
+    width: 100%;
+    margin-top: 20px;
+    margin-top: 10px; 
+    border-spacing: 0 10px;
+    text-align: center;
+}

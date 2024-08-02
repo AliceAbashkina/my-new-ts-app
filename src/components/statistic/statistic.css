@@ -1,0 +1,84 @@
+.background-white {
+    background-color: white;
+    border: solid 1px #DEE1E6;
+    border-radius: 7px;
+}
+
+.header-paddings {
+    padding: 22px 25px;
+}
+
+.card-paddings {
+    padding: 20px;
+}
+
+.card-name-strong {
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.table-statistic {
+    text-align: center;
+}
+
+.content-space-between {
+    justify-content: space-between;
+}
+
+progress {
+    border-radius: 7px;
+    width: 80%;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+progress::-webkit-progress-bar {
+    background-color: #DEE1E6;
+    border-radius: 7px;
+}
+
+progress::-webkit-progress-value {
+    background-color: #FFA630;
+    border-radius: 7px;
+}
+
+.dot {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.form-with-border-shadow {
+    border: 1px solid rgb(231, 231, 231);
+    border-radius: 7px;
+    padding: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.scrollable-container {
+    overflow: auto;
+    height: calc(100vh - 600px);
+}
+
+.statistic__flex_row {
+    flex-direction: row;
+    display: flex;
+}
+
+@media screen and (max-width: 764px) {
+    .statistic__flex_row {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 764px) {
+    .chart__class{
+        width: auto;
+        max-width: 600px;
+    }
+}
