@@ -1,26 +1,26 @@
-import React, { useState } from 'react';
-import SessionsBottomComponent from "./SessionsBottomComponents";
-import SessionsListClients from "./SessionsListClients";
-const SessionsComponent = (props) => {
-    const [activeClient, setActiveClient] = useState(1);
+import React from 'react';
+import SessionsComponent from '../../components/sessions/SessionsComponent';
+
+interface Client {
+    id: number;
+    name: string;
+    dateOfBirth: string;
+    lastSessionDate: string;
+    state: string[];
+    relationships: string[];
+    notes: string[];
+}
+
+const SessionsPage: React.FC = () => {
     return (
-        <div>
-           <div className="flex-row">
-                <SessionsListClients clients={clients} activeClient={activeClient} setActiveClient={setActiveClient} />
-                <div className="flex-column sessions__screen">
-                <div className="sessions__black"></div>
-                <SessionsBottomComponent clients={clients} activeClient={activeClient} setActiveClient={setActiveClient} />
-                </div>
-            </div>
+        <div className="sessions__container">
+            <SessionsComponent clients={clients} />
         </div>
     );
 };
 
-export default SessionsComponent;
 
-
-
-const clients = [
+const clients: Client[] = [
     {
         id: 1,
         name: "Иван Иванов",
@@ -202,3 +202,5 @@ const clients = [
         notes: ["Техники справления с паническими атаками и улучшение взаимоотношений с родственниками"]
     }
 ];
+
+export default SessionsPage;

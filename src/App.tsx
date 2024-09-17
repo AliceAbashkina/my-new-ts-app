@@ -1,4 +1,4 @@
-import React, { useState, ReactElement } from 'react';
+import { useState, ReactElement } from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 
 // Import components
@@ -15,7 +15,7 @@ import EducationPage from './pages/profile/EducationPage.jsx';
 import SchedulePage from './pages/profile/SchedulePage.jsx';
 import StatisticPage from './pages/profile/StatisticPage.jsx';
 import ClientsPage from './pages/profile/ClientsPage.jsx';
-import SessionsPage from './pages/profile/SessionsPage.jsx';
+import SessionsPage from './pages/profile/SessionsPage';
 import Header from './components/header/Header.jsx';
 import Footer from './components/footer/Footer.jsx';
 
